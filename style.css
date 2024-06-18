@@ -1,0 +1,91 @@
+/* Reset de estilos básicos */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to top left, rgba(197, 0, 181, 0.644), rgb(55, 0, 255), rgb(255, 0, 255), rgb(47, 0, 255));
+    color: #000000;
+    height: 100vh;
+    margin: 0;
+    font-size: large;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1, h2 {
+    color: #000000; /* Cor dos títulos alterada para branco */
+}
+
+p {
+    color: #000000; /* Cor dos parágrafos alterada para branco */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #000000;
+    padding: 10px 0;
+    text-align: center;
+    position: relative; /* Para posicionar em relação ao conteúdo do body */
+    z-index: 1; /* Garante que o cabeçalho fique acima dos demais elementos */
+}
+
+nav {
+    background-color: #b90000;
+    overflow: hidden;
+    z-index: 1; /* Garante que a navegação fique acima dos demais elementos */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #bb0000;
+}
+
+main {
+    padding: 20px;
+    flex: 1; /* Ocupa o espaço restante */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza conteúdo verticalmente */
+}
+
+footer {
+    background-color: #9c0000;
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 1; /* Garante que o rodapé fique acima dos demais elementos */
+}
+
+img {
+    width: 50%; 
+    max-width: 280px; 
+    height: auto; 
+    display: block;    
+     margin: 0 auto 20px;
+}
